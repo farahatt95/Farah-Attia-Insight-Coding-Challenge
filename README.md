@@ -4,6 +4,8 @@ I realized too late that another solution to the problem would be to build a bal
 
 **The files are in the folder coding-challenge-master.** My functions and classes are in the Extract_Info file under src. **In this file, I imported ast, datetime, and json.** In src, I also have a tests file for testing purposes.
 
+I had to use the relative path '..\\insight_testsuite\\tests\\test-1-venmo-trans\\venmo_output' for output.txt and the same but with 'venmo_input' substituted in in order to pass the tests provided in the test suite (see lines 116 and 176 in Extract-Info.py). I am not sure if that will work for other tests that you will be testing us with or if the location is still too specific, but I didn't reference specific paths in my system, only folders that I uploaded here.
+
 I have two classes, Node and Graph. My nodes are represented by the actor. My graph is represented as a dictionary where nodes are keys and values are lists of nodes that they are connected to.
 
 I have several functions which assist the "main" function. These include get_information, which changes the textfile of JSON messages into a list of lists returned by get_information. Each of the lists in the master list, like the JSON messages contains an actor, target, and created time. 
